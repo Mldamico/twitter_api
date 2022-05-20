@@ -1,0 +1,35 @@
+
+### Get all users
+GET http://localhost:8000/api/v1/users
+
+### Get User By ID
+GET http://localhost:8000/api/v1/user/1d527468-092c-473f-bf4c-b722e1a30293
+
+###Create User
+
+POST http://localhost:8000/api/v1/createUser
+content-type: application/json
+
+{
+    "name": "root",
+    "username": "root",
+    "password": "root",
+    "email":"root@gmail.com",
+    "profileImg": "s"
+}
+
+###Update User
+PUT http://localhost:8000/api/v1/updateUser/1d527468-092c-473f-bf4c-b722e1a30293
+content-type: application/json
+
+{
+    "name": "root2",
+    "username": "root",
+    "password": "root",
+    "email":"root@gmail.com",
+    "profileImg": "s"
+}
+
+
+### Find User tweets
+GET http://localhost:8000/api/v1/user-tweets/1d527468-092c-473f-bf4c-b722e1a30293

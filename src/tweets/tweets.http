@@ -1,0 +1,19 @@
+### Create Tweet
+
+POST http://localhost:8000/api/v1/createTweet
+content-type: application/json
+
+{
+    "tweet": "probando2",
+    "imagePath": "",
+    "user": "1d527468-092c-473f-bf4c-b722e1a30293"
+}
+
+### Like Tweet
+
+PUT http://localhost:8000/api/v1/likeTweet/0446e127-852c-4295-a412-23c94997f7dc
+content-type: application/json
+
+{
+    
+}
